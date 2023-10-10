@@ -1,0 +1,87 @@
+.home_container {
+    min-height: 700px;
+    padding: 30px 300px;
+}
+
+.home_container > h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.posts_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.control_lock {
+    position: fixed;
+    width: inherit;
+    max-width: inherit;
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#newpost {
+    display: block;
+    background-color: #008000;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#newpost:hover {
+    background-color: #005800;
+    color: #fff;
+}
+
+.control_lock > button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 2px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #313131;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.control_lock svg {
+    font-size: 20px;
+}
+
+.control_lock p {
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0px 5px 0px;
+    padding: 10px;
+    border-top: 1px solid #fff;
+}
+
+.control_lock button:hover {
+    background-color: #ffca28;
+    color: #1f1f1f;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.posts > p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}

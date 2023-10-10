@@ -1,0 +1,14 @@
+.nopage_container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.nopage_container h1 {
+    margin-top: 250px;
+    font-size: 120px;
+}

@@ -1,0 +1,48 @@
+.myposts_container {
+    min-height: 700px;
+    padding: 30px 300px;
+}
+
+.myposts_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myposts_header > h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.myposts_header > a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #008000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.myposts_header > a:hover {
+    background-color: #005800;
+}
+
+.myposts_body {
+    display: flex;
+    gap: 1rem;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.myposts_body > p {
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}

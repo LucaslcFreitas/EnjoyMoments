@@ -1,0 +1,62 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+
+.modal > div {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+}
+
+.modal h2 {
+    width: 100%;
+    background-color: #ffca28;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.modal p {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    margin: 10px;
+    gap: 0.5rem;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btconfirm {
+    background-color: #008000;
+}
+
+.btconfirm:hover {
+    background-color: #005800;
+}
+
+.btdismiss {
+    background-color: rgb(177, 0, 0);
+}
+
+.btdismiss:hover {
+    background-color: rgb(124, 0, 0);
+}
