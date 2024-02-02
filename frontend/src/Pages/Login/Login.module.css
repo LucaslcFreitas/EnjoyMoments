@@ -1,0 +1,178 @@
+.login_wrap {
+    padding: 0 140px;
+    width: 100%;
+    height: 100vh;
+}
+
+.login_wrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../public/img/bkg-large.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100% 100%;
+}
+
+.login_container {
+    position: relative;
+    display: flex;
+    min-height: 57em;
+    margin: auto;
+}
+
+.login_container > div {
+    flex: 1;
+    height: 50%;
+    margin: auto;
+    padding: auto;
+    color: #fff;
+}
+
+.login_container > div:first-child {
+    padding: 60px;
+}
+
+.introduction h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.introduction p {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.login_container div span {
+    color: #ffca28;
+}
+
+@media (max-width: 600px) {
+    .login_wrap {
+        padding: 0 5px;
+    }
+    .login_wrap:before {
+        background-image: url('../../../public/img/bkg-x-small.svg');
+    }
+    .login_container {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+    }
+    .login_container > div {
+        width: 100%;
+        flex: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .login_container > div:first-child {
+        padding: 0 10px;
+    }
+    .introduction h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .introduction p {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 778px) {
+    .login_wrap {
+        padding: 0 60px;
+    }
+    .login_wrap:before {
+        background-image: url('../../../public/img/bkg-x-small.svg');
+    }
+    .login_container {
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+    }
+    .login_container > div {
+        width: 100%;
+        flex: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .login_container > div:first-child {
+        padding: 0 40px;
+    }
+    .introduction h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .introduction p {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 992px) {
+    .login_wrap {
+        padding: 0 80px;
+    }
+    .login_wrap:before {
+        background-image: url('../../../public/img/bkg-small.svg');
+    }
+    .login_container > div:first-child {
+        padding: 40px;
+    }
+    .introduction h1 {
+        font-size: 40px;
+    }
+    .introduction p {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .login_wrap {
+        padding: 0 80px;
+    }
+    .login_wrap:before {
+        background-image: url('../../../public/img/bkg-medium.svg');
+    }
+    .login_container > div:first-child {
+        padding: 40px;
+    }
+    .introduction h1 {
+        font-size: 40px;
+    }
+    .introduction p {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .login_wrap {
+        padding: 0 110px;
+    }
+    .login_wrap:before {
+        background-image: url('../../../public/img/bkg-medium.svg');
+    }
+    .login_container > div:first-child {
+        padding: 50px;
+    }
+    .introduction h1 {
+        font-size: 45px;
+    }
+    .introduction p {
+        font-size: 28px;
+    }
+}

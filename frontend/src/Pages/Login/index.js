@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react'
-import LoginForm from '../Components/LoginForm'
+import LoginForm from '../../Components/LoginForm'
 import styles from './Login.module.css'
-import useAuth from '../Hooks/useAuth'
-import { useQuery } from '../Hooks/useQuery'
+import useAuth from '../../Hooks/useAuth'
 import { useNavigate } from 'react-router-dom'
 
 function Login() {
     const { signin, signed } = useAuth()
     const navigate = useNavigate()
-    const query = useQuery()
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -24,7 +22,6 @@ function Login() {
 
     function submitForm(e) {
         e.preventDefault()
-        const next = query.get('next')
 
         setError('')
         if (!email || !password) {
@@ -53,26 +50,6 @@ function Login() {
                 }
             }
         )
-
-        // if (authError) {
-        //     switch (error) {
-        //         case 'Missing parameters':
-        //             setError('Preencha todos os campos')
-        //             break
-        //         case 'User already exists':
-        //             setError('Usuário não cadastrado')
-        //             break
-        //         case 'Invalid credentials':
-        //             setError('Credênciais inválidas')
-        //             break
-        //         default:
-        //             setError('Aconteceu um erro inesperado')
-        //             break
-        //     }
-        //     return
-        // }
-
-        // navigate('/home')
     }
 
     return (
