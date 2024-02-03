@@ -1,12 +1,13 @@
 import styles from './Home.module.css'
-import PostHomepage from '../Components/PostHomepage'
+import PostHomepage from '../../Components/PostHomepage'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import api from '../Services/api'
-import useAuth from '../Hooks/useAuth'
+import api from '../../Services/api'
+import useAuth from '../../Hooks/useAuth'
 import $ from 'jquery'
-import { sortByTitle, sortByDateAsc, sortByDateDesc } from '../utils/sort'
-import formatDate from '../utils/formatDate'
+import { sortByTitle, sortByDateAsc, sortByDateDesc } from '../../utils/sort'
+import formatDate from '../../utils/formatDate'
+import { FaPlus } from 'react-icons/fa6'
 
 //icons
 import { MdSortByAlpha } from 'react-icons/md'
@@ -65,15 +66,23 @@ function Home() {
                 <div className={styles.control}>
                     <div id="control" className={styles.control_lock}>
                         <button onClick={newPost} id={styles.newpost}>
-                            Criar Post
+                            <span className={styles.button_label}>
+                                Criar Post
+                            </span>
+                            <div className={styles.button_plus}>
+                                <FaPlus />
+                            </div>
                         </button>
-                        <p>Ordenação:</p>
+                        <p className={styles.title_sort}>Ordenação:</p>
                         <button
                             onClick={() =>
                                 assignOrderedData(postsOriginals, sortByTitle)
                             }
                         >
-                            Alfabética <MdSortByAlpha />
+                            <span className={styles.button_label}>
+                                Alfabética
+                            </span>
+                            <MdSortByAlpha />
                         </button>
                         <button
                             onClick={() =>
@@ -83,14 +92,20 @@ function Home() {
                                 )
                             }
                         >
-                            Mais Recente <FaSortAmountUpAlt />
+                            <span className={styles.button_label}>
+                                Mais Recente
+                            </span>
+                            <FaSortAmountUpAlt />
                         </button>
                         <button
                             onClick={() =>
                                 assignOrderedData(postsOriginals, sortByDateAsc)
                             }
                         >
-                            Mais Antiga <FaSortAmountDown />
+                            <span className={styles.button_label}>
+                                Mais Antiga
+                            </span>
+                            <FaSortAmountDown />
                         </button>
                     </div>
                 </div>

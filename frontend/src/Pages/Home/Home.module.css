@@ -1,0 +1,216 @@
+.home_container {
+    min-height: 700px;
+    width: 1320px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.home_container > h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.posts_container {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.control_lock {
+    position: fixed;
+    width: inherit;
+    /* max-width: inherit; */
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#newpost {
+    display: block;
+    background-color: #008000;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#newpost:hover {
+    background-color: #005800;
+    color: #fff;
+}
+
+.control_lock > button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 2px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #313131;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.control_lock svg {
+    font-size: 20px;
+}
+
+.control_lock p {
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0px 5px 0px;
+    padding: 10px;
+    border-top: 1px solid #fff;
+}
+
+.control_lock button:hover {
+    background-color: #ffca28;
+    color: #1f1f1f;
+}
+
+.button_label,
+.title_sort {
+    color: #fff;
+}
+.button_plus {
+    display: none;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+}
+
+.posts > p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .home_container > h2 {
+        font-size: 18px;
+    }
+    .control_lock {
+        justify-content: flex-start !important;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .button_label {
+        display: none;
+    }
+    .button_plus {
+        display: block;
+    }
+}
+
+@media (max-width: 778px) {
+    .home_container > h2 {
+        font-size: 18px;
+    }
+    .home_container {
+        width: 100%;
+        padding: 10px;
+    }
+    .posts_container {
+        flex-direction: column;
+    }
+    .posts {
+        margin-top: 80px;
+    }
+    .control {
+        width: 100%;
+    }
+    .control_lock {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+        min-height: 70px;
+        -webkit-box-shadow: -2px 2px 16px -1px rgba(0, 0, 0, 0.56);
+        -moz-box-shadow: -2px 2px 16px -1px rgba(0, 0, 0, 0.56);
+        box-shadow: -2px 2px 16px -1px rgba(0, 0, 0, 0.56);
+    }
+    .control_lock > button {
+        padding: 10px;
+        width: auto;
+        gap: 5px;
+    }
+    .control_lock button span {
+        font-size: 12px;
+    }
+    .control_lock p {
+        margin: 0;
+        border: none;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 991px) {
+    .home_container > h2 {
+        font-size: 18px;
+    }
+    .home_container {
+        width: 700px;
+    }
+    .posts_container {
+        flex-direction: column;
+    }
+    .posts {
+        margin-top: 80px;
+    }
+    .control {
+        width: 100%;
+    }
+    .control_lock {
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+        height: 70px;
+        -webkit-box-shadow: -2px 2px 16px -1px rgba(0, 0, 0, 0.56);
+        -moz-box-shadow: -2px 2px 16px -1px rgba(0, 0, 0, 0.56);
+        box-shadow: -2px 2px 16px -1px rgba(0, 0, 0, 0.56);
+    }
+    .control_lock > button {
+        width: auto;
+        gap: 10px;
+    }
+    .control_lock p {
+        margin: 0;
+        border: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .home_container {
+        width: 900px;
+    }
+    .control {
+        width: 90px;
+    }
+    #newpost {
+        margin-bottom: 25px;
+    }
+    .button_label,
+    .title_sort {
+        display: none;
+    }
+    .button_plus {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .home_container {
+        width: 1150px;
+    }
+}
