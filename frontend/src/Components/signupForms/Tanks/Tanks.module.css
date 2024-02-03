@@ -1,0 +1,43 @@
+.tanks {
+    margin-top: 30px;
+}
+
+.tanks h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.tanks h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+}
+
+@media (max-width: 778px) {
+    .tanks h2 {
+        font-size: 20px;
+    }
+    .tanks h3 {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 992px) {
+    .tanks h2 {
+        font-size: 21px;
+    }
+    .tanks h3 {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .tanks h2 {
+        font-size: 22px;
+    }
+    .tanks h3 {
+        font-size: 18px;
+    }
+}

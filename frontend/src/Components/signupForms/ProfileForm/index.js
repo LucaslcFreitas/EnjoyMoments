@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import style from './SignupForms.module.css'
+import style from './ProfileForm.module.css'
 
 function ProfileForm({ data, updateFieldHandler }) {
     const [preview, setPreview] = useState()

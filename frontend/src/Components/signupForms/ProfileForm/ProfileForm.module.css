@@ -36,6 +36,7 @@
 
 .profile h3 {
     color: #fff;
+    font-size: 19px;
 }
 
 .form_control_profile {
@@ -63,11 +64,47 @@
     color: #fff;
 }
 
-.tanks {
-    margin-top: 30px;
+@media (max-width: 600px) {
+    .profile h3 {
+        font-size: 17px;
+    }
+    .form_control label {
+        font-size: 16px;
+    }
+    .form_control input {
+        font-size: 14px;
+    }
 }
 
-.tanks h3 {
-    text-align: center;
-    color: #fff;
+@media (min-width: 600px) and (max-width: 778px) {
+    .profile h3 {
+        font-size: 17px;
+    }
+    .form_control label {
+        font-size: 16px;
+    }
+    .form_control input {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 992px) {
+    .profile h3 {
+        font-size: 18px;
+    }
+    .form_control label {
+        font-size: 17px;
+    }
+    .form_control input {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .form_control label {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
 }

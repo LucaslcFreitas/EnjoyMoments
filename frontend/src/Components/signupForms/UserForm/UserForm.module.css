@@ -1,0 +1,72 @@
+.form_control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_control label {
+    margin-bottom: 0.6em;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+.form_control input {
+    padding: 0.7em;
+    border-radius: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+    font-size: 15px;
+    transition: all 300ms;
+}
+
+.form_control input::placeholder {
+    color: #202020;
+}
+
+.form_control input:focus {
+    border-color: #ffca28;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px #ffca28;
+    outline: 0 none;
+}
+
+.form_control textarea {
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .form_control label {
+        font-size: 16px;
+    }
+    .form_control input {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 778px) {
+    .form_control label {
+        font-size: 16px;
+    }
+    .form_control input {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 992px) {
+    .form_control label {
+        font-size: 17px;
+    }
+    .form_control input {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .form_control label {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+}

@@ -1,4 +1,4 @@
-import style from './SignupForms.module.css'
+import style from './UserForm.module.css'
 
 function UserForm({ data, updateFieldHandler }) {
     return (

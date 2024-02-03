@@ -15,6 +15,7 @@
     z-index: 1;
     width: 120px;
     padding: 0.5rem;
+    font-size: 16px;
     color: #ccc;
 }
 
@@ -25,4 +26,23 @@
 
 .step svg {
     font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .steps {
+        gap: 0.8rem;
+    }
+    .step {
+        font-size: 14px;
+    }
+}
+@media (min-width: 600px) and (max-width: 778px) {
+    .step {
+        font-size: 14px;
+    }
+}
+@media (min-width: 778px) and (max-width: 992px) {
+    .step {
+        font-size: 15px;
+    }
 }
