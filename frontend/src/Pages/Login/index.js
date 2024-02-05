@@ -14,6 +14,7 @@ function Login() {
     const [error, setError] = useState('')
 
     useEffect(() => {
+        document.title = 'Login'
         if (signed) {
             navigate('/home')
             return

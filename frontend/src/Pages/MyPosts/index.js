@@ -52,6 +52,7 @@ function MyPosts() {
     }
 
     useEffect(() => {
+        document.title = 'Meus Posts | Enjoy Moments'
         api.get('/post/my', { headers: { 'x-access-token': userToken } })
             .then((response) => {
                 let data = [...response.data]

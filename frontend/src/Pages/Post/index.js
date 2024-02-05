@@ -24,6 +24,7 @@ function Post() {
     const [myComment, setMyComment] = useState()
 
     useEffect(() => {
+        document.title = 'Visualizar Post | Enjoy Moments'
         if (id) {
             //post
             api.get(`/post/${id}`, { headers: { 'x-access-token': userToken } })

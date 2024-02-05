@@ -13,6 +13,7 @@ function Profile() {
     const navigate = useNavigate()
 
     useEffect(() => {
+        document.title = 'Meu Perfil | Enjoy Moments'
         api.get('/user', {
             headers: { 'x-access-token': userToken },
         })

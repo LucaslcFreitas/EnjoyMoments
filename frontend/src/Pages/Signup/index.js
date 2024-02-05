@@ -28,11 +28,12 @@ function Signup() {
     const [submited, setSubmited] = useState(false)
 
     useEffect(() => {
+        document.title = 'Criar conta | Enjoy Moments'
         if (signed) {
             navigate('/home')
             return
         }
-    })
+    }, [])
 
     const updateFieldHandler = (key, value) => {
         setData((prev) => {

@@ -22,6 +22,10 @@ function NewPost() {
     const [showAlertError, setShowAlertError] = useState(false)
 
     useEffect(() => {
+        document.title = 'Criar Post | Enjoy Moments'
+    }, [])
+
+    useEffect(() => {
         if (!image) {
             setImagePreview(undefined)
             return

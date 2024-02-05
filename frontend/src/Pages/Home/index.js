@@ -20,6 +20,7 @@ function Home() {
     const navigate = useNavigate()
 
     useEffect(() => {
+        document.title = 'Enjoy Moments'
         api.get('/post', { headers: { 'x-access-token': userToken } })
             .then((response) => {
                 setPostsOriginals(response.data)
