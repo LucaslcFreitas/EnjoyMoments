@@ -1,6 +1,5 @@
 import styles from './PostMyPosts.module.css'
-import { AiFillEdit, AiFillDelete } from 'react-icons/ai'
-import { useNavigate } from 'react-router-dom'
+import { AiFillDelete } from 'react-icons/ai'
 
 function PostMyPosts({
     id,
@@ -11,26 +10,22 @@ function PostMyPosts({
     user_name,
     showAlertDelete,
 }) {
-    const navigate = useNavigate()
-
     return (
         <div className={styles.post_container}>
             <button className={styles.delete} onClick={showAlertDelete}>
                 <AiFillDelete />
             </button>
-            <img src={photo} />
+            <img src={photo} alt={`Imagem do post ${title}`} />
             <div className={styles.content}>
-                <img className={styles.profile} src={user_photo} />
+                <img
+                    className={styles.profile}
+                    src={user_photo}
+                    alt={`Imagem de perfil do usário ${user_name}`}
+                />
                 <div className={styles.datas}>
                     <h2>{title}</h2>
                     <p>{`${user_name} - ${create_at}`}</p>
                 </div>
-                {/* <button
-                    onClick={() => navigate(`/edit/${id}`)}
-                    className={styles.edit}
-                >
-                    Editar <AiFillEdit />
-                </button> */}
             </div>
         </div>
     )

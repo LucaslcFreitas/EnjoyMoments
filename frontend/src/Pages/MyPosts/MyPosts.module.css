@@ -1,0 +1,114 @@
+.myposts_container {
+    min-height: 700px;
+    padding: 30px 0;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.myposts_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myposts_header > h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.myposts_header > a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #008000;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.myposts_header > a:hover {
+    background-color: #005800;
+}
+
+.myposts_body {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.myposts_body > p {
+    margin-top: 150px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .myposts_container {
+        width: 100%;
+        padding: 15px;
+    }
+    .myposts_header > h2 {
+        font-size: 18px;
+    }
+    .myposts_header > a {
+        padding: 10px;
+        font-size: 14px;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+    .add_post_label {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 778px) {
+    .myposts_container {
+        width: 100%;
+        padding: 15px;
+    }
+    .myposts_header > h2 {
+        font-size: 20px;
+    }
+    .myposts_header > a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 991px) {
+    .myposts_container {
+        width: 680px;
+    }
+    .myposts_header > h2 {
+        font-size: 20px;
+    }
+    .myposts_header > a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .myposts_container {
+        width: 900px;
+    }
+    .myposts_header > h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+    .myposts_container {
+        width: 1100px;
+    }
+}

@@ -2,12 +2,12 @@ import styles from './MyPosts.module.css'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { FaPlus } from 'react-icons/fa'
-import { sortByDateAsc } from '../utils/sort'
-import api from '../Services/api'
-import useAuth from '../Hooks/useAuth'
-import PostMyPosts from '../Components/PostMyPosts'
-import AlertConfirm from '../Components/AlertConfirm'
-import AlertError from '../Components/AlertError'
+import { sortByDateAsc } from '../../utils/sort'
+import api from '../../Services/api'
+import useAuth from '../../Hooks/useAuth'
+import PostMyPosts from '../../Components/PostMyPosts'
+import AlertConfirm from '../../Components/AlertConfirm'
+import AlertError from '../../Components/AlertError'
 
 function MyPosts() {
     const { userToken, signout } = useAuth()
@@ -85,7 +85,8 @@ function MyPosts() {
             <div className={styles.myposts_header}>
                 <h2>Compartilhe com o mundo suas histórias</h2>
                 <Link to="/newpost">
-                    Criar post <FaPlus />
+                    <p className={styles.add_post_label}>Criar post</p>{' '}
+                    <FaPlus />
                 </Link>
             </div>
             <div className={styles.myposts_body}>
