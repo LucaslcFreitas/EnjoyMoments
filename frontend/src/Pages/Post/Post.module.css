@@ -1,0 +1,290 @@
+.post_container {
+    min-height: 700px;
+    padding: 30px 0;
+    width: 860px;
+    margin: 0 auto;
+}
+
+.post_container > p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.post {
+    width: 100%;
+}
+
+.post > img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    background-color: #c7c7c7;
+}
+
+.post h1 {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.post > p {
+    color: #fff;
+}
+
+.profilelike {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile > img {
+    width: 40px;
+    height: 40px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+}
+
+.profile > p {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0px 10px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.like:hover {
+    background-color: #313131;
+}
+
+.like > svg {
+    font-size: 20px;
+}
+
+.liked {
+    background-color: #008000;
+}
+
+.liked:hover {
+    background-color: #005800;
+}
+
+.description {
+    color: #fff;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.description h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.comments {
+    width: 100%;
+    color: #fff;
+}
+
+.comments h2 {
+    font-size: 24px;
+}
+
+.comments textarea {
+    width: 100%;
+    margin: 15px 0;
+    padding: 5px;
+}
+
+.comments textarea:focus {
+    border-color: #ffca28;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px #ffca28;
+    outline: 0 none;
+}
+
+.comments button {
+    padding: 10px;
+    color: #fff;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.comments button:hover {
+    background-color: #313131;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.comment > img {
+    width: 40px;
+    height: 40px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comment div h3 span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+@media (max-width: 600px) {
+    .post_container {
+        width: 95%;
+    }
+    .post h1 {
+        font-size: 20px;
+    }
+    .post > p {
+        font-size: 14px;
+    }
+    .profile > p {
+        font-size: 16px;
+    }
+    .profile > img,
+    .comment > img {
+        width: 33px;
+        height: 33px;
+    }
+    .profilelike button p,
+    .profilelike button svg,
+    .description p {
+        font-size: 14px;
+    }
+    .description h2,
+    .comments h2 {
+        font-size: 19px;
+    }
+    .comment div h3 {
+        font-size: 15px;
+    }
+    .comment div h3 span {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 778px) {
+    .post_container {
+        width: 550px;
+    }
+    .post h1 {
+        font-size: 22px;
+    }
+    .post > p {
+        font-size: 14px;
+    }
+    .profile > p {
+        font-size: 16px;
+    }
+    .profile > img,
+    .comment > img {
+        width: 33px;
+        height: 33px;
+    }
+    .profilelike button p,
+    .profilelike button svg,
+    .description p {
+        font-size: 14px;
+    }
+    .description h2,
+    .comments h2 {
+        font-size: 20px;
+    }
+    .comment div h3 {
+        font-size: 15px;
+    }
+    .comment div h3 span {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 991px) {
+    .post_container {
+        width: 700px;
+    }
+    .post h1 {
+        font-size: 23px;
+    }
+    .post > p {
+        font-size: 15px;
+    }
+    .profile > p {
+        font-size: 16px;
+    }
+    .profile > img,
+    .comment > img {
+        width: 35px;
+        height: 35px;
+    }
+    .profilelike button p,
+    .profilelike button svg,
+    .comment div h3 {
+        font-size: 15px;
+    }
+    .description h2 {
+        font-size: 20px;
+    }
+    .description p {
+        font-size: 14px;
+    }
+    .comments h2 {
+        font-size: 20px;
+    }
+    .comment div h3 span {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .post h1 {
+        font-size: 25px;
+    }
+    .profile > p {
+        font-size: 17px;
+    }
+    .description h2 {
+        font-size: 22px;
+    }
+    .comments h2 {
+        font-size: 22px;
+    }
+    .comment div h3 {
+        font-size: 15px;
+    }
+    .comment div h3 span {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+}

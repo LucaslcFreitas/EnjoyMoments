@@ -1,10 +1,10 @@
 import styles from './Post.module.css'
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import api from '../Services/api'
-import useAuth from '../Hooks/useAuth'
+import api from '../../Services/api'
+import useAuth from '../../Hooks/useAuth'
 import { BiLike } from 'react-icons/bi'
-import formatDate from '../utils/formatDate'
+import formatDate from '../../utils/formatDate'
 
 function Post() {
     const { userToken, signout } = useAuth()
@@ -148,12 +148,18 @@ function Post() {
             likes !== undefined &&
             coments !== undefined ? (
                 <div className={styles.post}>
-                    <img src={post.photo} />
+                    <img
+                        src={post.photo}
+                        alt={`Imagem do post ${post.title}`}
+                    />
                     <h1>{post.title}</h1>
                     <p>{formatDate(post.create_at)}</p>
                     <div className={styles.profilelike}>
                         <div className={styles.profile}>
-                            <img src={post.user.photo} />
+                            <img
+                                src={post.user.photo}
+                                alt={`Imagem do perfil do usuário ${post.user.name}`}
+                            />
                             <p>{post.user.name}</p>
                         </div>
                         <button
@@ -182,9 +188,12 @@ function Post() {
                             />
                             <button type="submit">Enviar</button>
                         </form>
-                        {coments.map((comment) => (
-                            <div className={styles.comment}>
-                                <img src={comment.user.photo} />
+                        {coments.map((comment, index) => (
+                            <div key={index} className={styles.comment}>
+                                <img
+                                    src={comment.user.photo}
+                                    alt={`Imagem do perfil do usuário ${comment.user.name}`}
+                                />
                                 <div>
                                     <h3>
                                         {comment.user.name} -{' '}
