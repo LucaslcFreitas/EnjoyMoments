@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: rgba(31, 31, 31, 0.8);
 }
 
 .modal > div {
@@ -16,6 +16,7 @@
 }
 
 .modal h2 {
+    font-size: 24px;
     width: 100%;
     background-color: #ffca28;
     padding: 10px 15px;
@@ -59,4 +60,22 @@
 
 .btdismiss:hover {
     background-color: rgb(124, 0, 0);
+}
+
+@media (max-width: 600px) {
+    .modal > div {
+        width: 80%;
+    }
+    .modal h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 778px) {
+    .modal > div {
+        width: 300px;
+    }
+    .modal h2 {
+        font-size: 22px;
+    }
 }
