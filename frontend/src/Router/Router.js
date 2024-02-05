@@ -13,7 +13,6 @@ import Profile from '../Pages/Profile'
 import MyPosts from '../Pages/MyPosts'
 import Post from '../Pages/Post'
 import NewPost from '../Pages/NewPost'
-import EditPost from '../Pages/EditPost'
 
 const Private = ({ Item }) => {
     const { signed } = useAuth()
@@ -34,7 +33,6 @@ function Router() {
                     <Route path="myposts" element={<MyPosts />} />
                     <Route path="post/:id" element={<Post />} />
                     <Route path="newpost" element={<NewPost />} />
-                    {/* <Route path="edit/:id" element={<EditPost />} /> */}
                 </Route>
                 <Route path="*" element={<NoPage />} />
             </Routes>
