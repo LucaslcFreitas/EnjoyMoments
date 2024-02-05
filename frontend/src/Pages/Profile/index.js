@@ -1,7 +1,7 @@
 import styles from './Profile.module.css'
 import { useState, useEffect } from 'react'
-import api from '../Services/api'
-import useAuth from '../Hooks/useAuth'
+import api from '../../Services/api'
+import useAuth from '../../Hooks/useAuth'
 import { useNavigate } from 'react-router-dom'
 
 function Profile() {
@@ -33,7 +33,7 @@ function Profile() {
             {profile ? (
                 <>
                     <div className={styles.image}>
-                        <img src={profile.photo} />
+                        <img src={profile.photo} alt="Imagem de perfil" />
                         <h2>{profile.name}</h2>
                     </div>
                     <form className={styles.formProfile}>
