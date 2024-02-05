@@ -1,11 +1,11 @@
 import styles from './NewPost.module.css'
 import { SlCloudUpload } from 'react-icons/sl'
 import { useState, useEffect } from 'react'
-import api from '../Services/api'
-import useAuth from '../Hooks/useAuth'
+import api from '../../Services/api'
+import useAuth from '../../Hooks/useAuth'
 import { useNavigate } from 'react-router-dom'
-import AlertConfirmSingle from '../Components/AlertConfirmSingle'
-import AlertError from '../Components/AlertError'
+import AlertConfirmSingle from '../../Components/AlertConfirmSingle'
+import AlertError from '../../Components/AlertError'
 
 function NewPost() {
     const [image, setImage] = useState()
@@ -81,7 +81,7 @@ function NewPost() {
                             <SlCloudUpload />
                         </div>
                         <div className={styles.text}>
-                            <span>Click to upload image</span>
+                            <span>Clique para carregar imagem</span>
                         </div>
                         <input
                             type="file"

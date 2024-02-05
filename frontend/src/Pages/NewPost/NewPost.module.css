@@ -1,6 +1,8 @@
 .newpost_container {
     min-height: 700px;
-    padding: 30px 500px;
+    padding: 30px 0;
+    width: 900px;
+    margin: 0 auto;
 }
 
 .newpost_container > h2 {
@@ -114,7 +116,7 @@
     font-family: inherit;
     text-align: center;
     font-size: 15px;
-    padding: 1em;
+    padding: 14px;
     transition: all 0.4s;
     cursor: pointer;
 }
@@ -146,4 +148,67 @@
 .form_btn:hover span:after {
     opacity: 4;
     right: -5;
+}
+
+@media (max-width: 600px) {
+    .newpost_container {
+        width: 95%;
+    }
+    .newpost_container > h2 {
+        font-size: 20px;
+    }
+    .form_control label {
+        font-size: 17px;
+    }
+    .form_control input {
+        font-size: 13px;
+    }
+    .form_btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .custum_file_upload {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 778px) {
+    .newpost_container {
+        width: 580px;
+    }
+    .newpost_container > h2 {
+        font-size: 20px;
+    }
+    .form_control label {
+        font-size: 17px;
+    }
+    .form_control input {
+        font-size: 13px;
+    }
+    .form_btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 778px) and (max-width: 991px) {
+    .newpost_container {
+        width: 700px;
+    }
+    .newpost_container > h2 {
+        font-size: 22px;
+    }
+    .form_control label {
+        font-size: 18px;
+    }
+    .form_control input {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .newpost_container {
+        width: 700px;
+    }
 }
